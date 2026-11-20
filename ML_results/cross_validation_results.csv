@@ -1,0 +1,4 @@
+Model,CV train accuracy,CV val accuracy (mean),CV val accuracy (std),CV val F1 (mean),CV val F1 (std)
+Logistic Regression,0.99983,0.99981,4e-05,0.99978,5e-05
+Decision Tree,0.99998,0.99986,9e-05,0.99984,0.0001
+Random Forest,1.0,0.99998,2e-05,0.99998,2e-05

@@ -1,0 +1,7 @@
+Setting,Model,Version,Train Accuracy,Test Accuracy,Test Precision,Test Recall,Test F1-score,Test ROC-AUC,Train-Test accuracy gap
+URL-only features,Logistic Regression,Baseline (default),0.993,0.99261,0.99698,0.98568,0.9913,,0.00039
+URL-only features,Decision Tree,Baseline (default),0.99999,0.99422,0.99373,0.99274,0.99324,,0.00577
+URL-only features,Random Forest,Baseline (default),0.99999,0.99603,0.99775,0.99294,0.99534,,0.00396
+URL-only features,Logistic Regression,Tuned,0.99305,0.99242,0.99603,0.98618,0.99108,0.99662,0.00063
+URL-only features,Decision Tree,Tuned,0.99596,0.99437,0.99655,0.99026,0.99339,0.99539,0.00159
+URL-only features,Random Forest,Tuned,0.99659,0.9956,0.99885,0.99085,0.99483,0.99858,0.00098

@@ -1,0 +1,93 @@
+{
+  "selected_model": "Random Forest",
+  "selection_rule": "highest mean 5-fold CV F1 (phishing) on the training split",
+  "hyperparameters": {
+    "max_depth": 15,
+    "max_features": "sqrt",
+    "min_samples_leaf": 1,
+    "n_estimators": 100,
+    "cv_f1_phishing_on_tuning_sample": 0.99988
+  },
+  "feature_columns": [
+    "URLLength",
+    "DomainLength",
+    "IsDomainIP",
+    "URLSimilarityIndex",
+    "CharContinuationRate",
+    "TLDLegitimateProb",
+    "URLCharProb",
+    "TLDLength",
+    "NoOfSubDomain",
+    "HasObfuscation",
+    "NoOfObfuscatedChar",
+    "ObfuscationRatio",
+    "NoOfLettersInURL",
+    "LetterRatioInURL",
+    "NoOfDegitsInURL",
+    "DegitRatioInURL",
+    "NoOfEqualsInURL",
+    "NoOfQMarkInURL",
+    "NoOfAmpersandInURL",
+    "NoOfOtherSpecialCharsInURL",
+    "SpacialCharRatioInURL",
+    "IsHTTPS",
+    "LineOfCode",
+    "LargestLineLength",
+    "HasTitle",
+    "DomainTitleMatchScore",
+    "URLTitleMatchScore",
+    "HasFavicon",
+    "Robots",
+    "IsResponsive",
+    "NoOfURLRedirect",
+    "NoOfSelfRedirect",
+    "HasDescription",
+    "NoOfPopup",
+    "NoOfiFrame",
+    "HasExternalFormSubmit",
+    "HasSocialNet",
+    "HasSubmitButton",
+    "HasHiddenFields",
+    "HasPasswordField",
+    "Bank",
+    "Pay",
+    "Crypto",
+    "HasCopyrightInfo",
+    "NoOfImage",
+    "NoOfCSS",
+    "NoOfJS",
+    "NoOfSelfRef",
+    "NoOfEmptyRef",
+    "NoOfExternalRef"
+  ],
+  "label_mapping": {
+    "0": "Phishing",
+    "1": "Legitimate"
+  },
+  "class_order_in_model": [
+    0,
+    1
+  ],
+  "test_metrics": {
+    "Accuracy": 0.99996,
+    "Precision": 1.0,
+    "Recall": 0.9999,
+    "F1-score": 0.99995,
+    "ROC-AUC": 1.0
+  },
+  "random_state": 42,
+  "test_size": 0.2,
+  "data_summary": {
+    "rows_in_cleaned_file": 238941,
+    "rows_with_missing_url": 2375,
+    "rows_after_url_dedup": 235468,
+    "n_features": 50,
+    "missing_cells_in_features": 115429,
+    "class_counts": {
+      "Phishing(0)": 100578,
+      "Legitimate(1)": 134890
+    },
+    "train_rows": 188374,
+    "test_rows": 47094
+  }
+}

@@ -1,0 +1,4 @@
+Model,CV val F1 (mean),CV val F1 (std)
+Logistic Regression,0.9918,0.00036
+Decision Tree,0.99307,0.00047
+Random Forest,0.99453,0.00047

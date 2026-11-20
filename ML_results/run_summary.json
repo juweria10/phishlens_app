@@ -1,0 +1,140 @@
+{
+  "data": {
+    "rows_in_cleaned_file": 238941,
+    "rows_with_missing_url": 2375,
+    "rows_after_url_dedup": 235468,
+    "n_features": 50,
+    "missing_cells_in_features": 115429,
+    "class_counts": {
+      "Phishing(0)": 100578,
+      "Legitimate(1)": 134890
+    },
+    "train_rows": 188374,
+    "test_rows": 47094
+  },
+  "best_model": "Random Forest",
+  "best_params": {
+    "Logistic Regression": {
+      "C": 100,
+      "class_weight": null,
+      "cv_f1_phishing_on_tuning_sample": 0.99957
+    },
+    "Decision Tree": {
+      "criterion": "gini",
+      "max_depth": 12,
+      "min_samples_leaf": 1,
+      "cv_f1_phishing_on_tuning_sample": 0.99965
+    },
+    "Random Forest": {
+      "max_depth": 15,
+      "max_features": "sqrt",
+      "min_samples_leaf": 1,
+      "n_estimators": 100,
+      "cv_f1_phishing_on_tuning_sample": 0.99988
+    }
+  },
+  "learning_curve_final": {
+    "Logistic Regression": {
+      "final_train": 0.9998166666666667,
+      "final_cv": 0.9996333333333333
+    },
+    "Decision Tree": {
+      "final_train": 1.0,
+      "final_cv": 0.9996999999999999
+    },
+    "Random Forest": {
+      "final_train": 1.0,
+      "final_cv": 0.99995
+    }
+  },
+  "url_only_best": "Random Forest",
+  "url_only_best_params": {
+    "Logistic Regression": {
+      "C": 100,
+      "class_weight": "balanced",
+      "cv_f1_phishing_on_tuning_sample": 0.99173
+    },
+    "Decision Tree": {
+      "criterion": "gini",
+      "max_depth": 20,
+      "min_samples_leaf": 5,
+      "cv_f1_phishing_on_tuning_sample": 0.99063
+    },
+    "Random Forest": {
+      "max_depth": 25,
+      "max_features": "sqrt",
+      "min_samples_leaf": 3,
+      "n_estimators": 200,
+      "cv_f1_phishing_on_tuning_sample": 0.99264
+    }
+  },
+  "top_features": {
+    "URLSimilarityIndex": 0.1954,
+    "NoOfExternalRef": 0.169,
+    "LineOfCode": 0.148,
+    "NoOfSelfRef": 0.1069,
+    "NoOfImage": 0.0843,
+    "NoOfJS": 0.0663,
+    "HasSocialNet": 0.0345,
+    "NoOfCSS": 0.0304,
+    "IsHTTPS": 0.0232,
+    "HasCopyrightInfo": 0.0213
+  },
+  "tuning_note": {
+    "grid_search_rows": 30000,
+    "grid_folds": 3,
+    "stability_cv_folds": 5,
+    "grids": {
+      "Logistic Regression": {
+        "C": [
+          0.01,
+          0.1,
+          1,
+          10,
+          100
+        ],
+        "class_weight": [
+          null,
+          "balanced"
+        ]
+      },
+      "Decision Tree": {
+        "criterion": [
+          "gini",
+          "entropy"
+        ],
+        "max_depth": [
+          5,
+          8,
+          12,
+          20,
+          null
+        ],
+        "min_samples_leaf": [
+          1,
+          5,
+          20
+        ]
+      },
+      "Random Forest": {
+        "n_estimators": [
+          100,
+          200
+        ],
+        "max_depth": [
+          15,
+          25
+        ],
+        "min_samples_leaf": [
+          1,
+          3
+        ],
+        "max_features": [
+          "sqrt"
+        ]
+      }
+    }
+  },
+  "dry_run": false,
+  "seconds": 501.2
+}

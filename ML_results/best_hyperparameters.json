@@ -1,0 +1,20 @@
+{
+  "Logistic Regression": {
+    "C": 100,
+    "class_weight": null,
+    "cv_f1_phishing_on_tuning_sample": 0.99957
+  },
+  "Decision Tree": {
+    "criterion": "gini",
+    "max_depth": 12,
+    "min_samples_leaf": 1,
+    "cv_f1_phishing_on_tuning_sample": 0.99965
+  },
+  "Random Forest": {
+    "max_depth": 15,
+    "max_features": "sqrt",
+    "min_samples_leaf": 1,
+    "n_estimators": 100,
+    "cv_f1_phishing_on_tuning_sample": 0.99988
+  }
+}

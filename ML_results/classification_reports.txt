@@ -1,0 +1,30 @@
+===== Logistic Regression (tuned, test set) =====
+              precision    recall  f1-score   support
+
+    Phishing     1.0000    0.9996    0.9998     20116
+  Legitimate     0.9997    1.0000    0.9998     26978
+
+    accuracy                         0.9998     47094
+   macro avg     0.9998    0.9998    0.9998     47094
+weighted avg     0.9998    0.9998    0.9998     47094
+
+===== Decision Tree (tuned, test set) =====
+              precision    recall  f1-score   support
+
+    Phishing     0.9998    0.9998    0.9998     20116
+  Legitimate     0.9998    0.9999    0.9998     26978
+
+    accuracy                         0.9998     47094
+   macro avg     0.9998    0.9998    0.9998     47094
+weighted avg     0.9998    0.9998    0.9998     47094
+
+===== Random Forest (tuned, test set) =====
+              precision    recall  f1-score   support
+
+    Phishing     1.0000    0.9999    1.0000     20116
+  Legitimate     0.9999    1.0000    1.0000     26978
+
+    accuracy                         1.0000     47094
+   macro avg     1.0000    1.0000    1.0000     47094
+weighted avg     1.0000    1.0000    1.0000     47094
+

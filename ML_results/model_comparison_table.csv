@@ -1,0 +1,7 @@
+Model,Version,Fit seconds,Train Accuracy,Train Precision,Train Recall,Train F1-score,Test Accuracy,Test Precision,Test Recall,Test F1-score,Train-Test accuracy gap,Train-Test F1 gap,Test ROC-AUC
+Logistic Regression,Baseline (default),1.2,0.99981,0.99998,0.99958,0.99978,0.99979,1.0,0.9995,0.99975,2e-05,2e-05,
+Decision Tree,Baseline (default),1.9,1.0,1.0,1.0,1.0,0.99987,0.9999,0.9998,0.99985,0.00013,0.00015,
+Random Forest,Baseline (default),16.6,1.0,1.0,1.0,1.0,0.99996,1.0,0.9999,0.99995,4e-05,5e-05,
+Logistic Regression,Tuned,1.3,0.99982,0.99999,0.99959,0.99979,0.99981,1.0,0.99955,0.99978,1e-05,1e-05,1.0
+Decision Tree,Tuned,2.2,0.99998,1.0,0.99995,0.99998,0.99981,0.9998,0.99975,0.99978,0.00017,0.0002,0.99987
+Random Forest,Tuned,16.1,1.0,1.0,1.0,1.0,0.99996,1.0,0.9999,0.99995,4e-05,5e-05,1.0

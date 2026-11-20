@@ -1,0 +1,4 @@
+Setting,Model,Accuracy,Precision,Recall,F1-score
+URL-only minus IsHTTPS,Logistic Regression,0.93095,0.95221,0.88263,0.9161
+URL-only minus IsHTTPS,Decision Tree,0.98981,0.98899,0.98712,0.98806
+URL-only minus IsHTTPS,Random Forest,0.99346,0.99431,0.99036,0.99233

@@ -1,0 +1,7 @@
+,,Pred Phishing,Pred Legitimate
+Logistic Regression,True Phishing,19838,278
+Logistic Regression,True Legitimate,79,26899
+Decision Tree,True Phishing,19920,196
+Decision Tree,True Legitimate,69,26909
+Random Forest,True Phishing,19932,184
+Random Forest,True Legitimate,23,26955
