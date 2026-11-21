@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
-df = pd.read_csv("Phishing_URL_Dataset.csv")
+df = pd.read_csv("Phishing_URL_Dataset.csv") 
 
 print("Dataset Shape:", df.shape)
 print("\nFirst 5 Records:")
